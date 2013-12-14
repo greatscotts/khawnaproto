@@ -22,6 +22,10 @@ body {
   height: 160px;
   background-color: #e74c3c;
 }
+#footers{
+  height: 160px;
+  background-color: #ffffff;
+}
 
 
 /* Custom page CSS
