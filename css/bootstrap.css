@@ -3532,7 +3532,7 @@ input[type="button"].btn-block {
 }
 
 .dropdown-toggle:focus {
-  outline: 0;
+  outline: 1;
 }
 
 .dropdown-menu {
