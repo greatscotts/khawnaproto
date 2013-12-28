@@ -96,7 +96,7 @@ h2{
 #second{
 	background: url(images/home2.png) 50% 0 no-repeat fixed;
 	color: white;
-	height: 445px;
+	height: 385px;
 	margin: 0 auto;
 	overflow: hidden;
 	padding: 0;
@@ -120,8 +120,8 @@ h2{
 }
 
 #fifth{
-	
-	height: 300px;
+	background: url(images/bgdata.png) 50% 0 no-repeat fixed;
+	height: 385px;
 	margin: 0 auto;
 	padding: 40px 0 0 0;
 }
