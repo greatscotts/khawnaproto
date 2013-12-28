@@ -85,6 +85,7 @@ h2{
 	width: 100%;
 }
 
+
 #intro{
 	background:url(images/tst.png) 50% 0 no-repeat fixed;
 	color: white;
@@ -113,9 +114,8 @@ h2{
 }
 
 #third{
-	
-	color: white;
-	height: 450px;
+
+	height: 530px;
 	
 }
 
