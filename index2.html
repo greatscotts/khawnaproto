@@ -1,8 +1,22 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>jQuery Parallax Plugin Demo</title>
+<html>
+  <head>
+    <title>Khawna | Home</title>
+
+    <meta property="og:title" content="Khawna" />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="http://i41.tinypic.com/243npk8.png" />
+  <link rel="image_src" href="http://i41.tinypic.com/243npk8.png" />
+<meta charset="utf-8">
+
+  <title>Khawna</title>
+  <meta name="description" content="OrangeApps Inc believes that Putting educational technology in todays generation will not just define the future of this country, but the WORLD">
+  <meta name="author" content="Untame.net">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+   <link href="jumbotron-narrow.css" rel="stylesheet">
+   <link href="sticky-footer.css" rel="stylesheet">
 <link href="style.css" rel="stylesheet" type="text/css" />
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
 <script type="text/javascript" src="scripts/jquery.parallax-1.1.3.js"></script>
@@ -10,81 +24,182 @@
 <script type="text/javascript" src="scripts/jquery.scrollTo-1.4.2-min.js"></script>
 <script type="text/javascript">
 $(document).ready(function(){
-	$('#nav').localScroll(800);
-	
-	//.parallax(xPosition, speedFactor, outerHeight) options:
-	//xPosition - Horizontal position of the element
-	//inertia - speed to move relative to vertical scroll. Example: 0.1 is one tenth the speed of scrolling, 2 is twice the speed of scrolling
-	//outerHeight (true/false) - Whether or not jQuery should use it's outerHeight option to determine when a section is in the viewport
-	$('#intro').parallax("50%", 0.1);
-	$('#second').parallax("50%", 0.1);
-	$('.bg').parallax("50%", 0.4);
-	$('#third').parallax("50%", 0.3);
+  $('#nav').localScroll(800);
+  
+  //.parallax(xPosition, speedFactor, outerHeight) options:
+  //xPosition - Horizontal position of the element
+  //inertia - speed to move relative to vertical scroll. Example: 0.1 is one tenth the speed of scrolling, 2 is twice the speed of scrolling
+  //outerHeight (true/false) - Whether or not jQuery should use it's outerHeight option to determine when a section is in the viewport
+  $('#intro').parallax("50%", 0.1);
+  $('#second').parallax("50%", 0.1);
+  $('.bg').parallax("50%", 0.4);
+  $('#third').parallax("50%", 0.3);
 
 })
 </script>
 </head>
 
-<body>
-	<ul id="nav">
-		<li><a href="#intro" title="Next Section"><img src="images/dot.png" alt="Link" /></a></li>
-	    <li><a href="#second" title="Next Section"><img src="images/dot.png" alt="Link" /></a></li>
-	    <li><a href="#third" title="Next Section"><img src="images/dot.png" alt="Link" /></a></li>
-	    <li><a href="#fifth" title="Next Section"><img src="images/dot.png" alt="Link" /></a></li>
-	</ul>
-	
-	<div id="intro">
-		<div class="story">
-	    	<div class="float-left">
-			<h2>(Almost) Static Background</h2>
-	        <p>This section has a background that moves slightly slower than the user scrolls. This is achieved by changing the top position of the background for every pixel the page is scrolled.</p>
-	        </div>
-	    </div> <!--.story-->
-	</div> <!--#intro-->
-	
-	<div id="second">
-		<div class="story"><div class="bg"></div>
-	    	<div class="float-right">
-	            <h2>Multiple Backgrounds</h2>
-	            <p>The multiple backgrounds applied to this section are moved in a similar way to the first section -- every time the user scrolls down the page by a pixel, the positions of the backgrounds are changed.</p>
-	            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nibh erat, sagittis sit amet congue at, aliquam eu libero. Integer molestie, turpis vel ultrices facilisis, nisi mauris sollicitudin mauris, volutpat elementum enim urna eget odio. Donec egestas aliquet facilisis. Nunc eu nunc eget neque ornare fringilla. Nam vel sodales lectus. Nulla in pellentesque eros. Donec ultricies, enim vitae varius cursus, risus mauris iaculis neque, euismod sollicitudin metus erat vitae sapien. Sed pulvinar.</p>
-	        </div>
-	    </div> <!--.story-->
-	    
-	</div> <!--#second-->
-	
-	<div id="third">
-		<div class="story">
-	    	<div class="float-left">
-	        	<h2>What Happens When JavaScript is Disabled?</h2>
-	            <p>The user gets a slap! Actually, all that jQuery does is moves the backgrounds relative to the position of the scrollbar. Without it, the backgrounds simply stay put and the user would never know they are missing out on the awesome! CSS2 does a good enough job to still make the effect look cool.</p>
-	        </div>
-	    </div> <!--.story-->
-	</div> <!--#third-->
-	
-	<div id="fifth">
-		<div class="story">
-		    <p>Check out my new plugin <a href="http://www.sequencejs.com" title="Sequence.js">Sequence.js</a> for parallax effects and a whole lot more!</p>
-	        
-	        <h2>Ian Lunn</h2>
-	        <ul>
-	            <li><strong>Twitter</strong>: <a href="http://www.twitter.com/IanLunn" title="Follow Ian on Twitter">@IanLunn</a></li>
-	            <li><strong>GitHub</strong>: <a href="http://www.github.com/IanLunn" title="Follow Ian on GitHub">IanLunn</a></li>
-	            <li><strong>Website</strong>: <a href="http://www.ianlunn.co.uk/" title="Ian Lunn Design">www.ianlunn.co.uk</a></li>
-	        </ul>
-	        
-	        <p>This demo is based on the <a href="http://www.nikebetterworld.com" title="Nike Better World">Nikebetterworld.com</a> website.</p>
-	        
-	        <h2>Credits</h2>
-	        <p>This plugin makes use of some scripts and images made by others:</p>
-	        <ul>
-	        	<li><a href="http://flesler.blogspot.com/2007/10/jqueryscrollto.html" title="jQuery ScrollTo">jQuery ScrollTo</a></li>
-	            <li><a href="http://downloads.dvq.co.nz/" title="Background Textures">Wooden and Pyschedlic Background Textures</a></li>
-	            <li><a href="http://www.sxc.hu/photo/931435" title="Trainers Image">Trainers Image</a></li>
-	            <li><a href="http://www.sxc.hu/photo/1015485" title="Basketball Image">Basketball Image</a></li>
-	            <li><a href="http://www.sxc.hu/photo/563767" title="Bottles Image">Bottles Image</a></li>
-	        </ul>
-	    </div> <!--.story-->
-	</div> <!--#fifth-->
-</body>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <bR>   <bR>
+    <div class="container">
+      <div class="header">
+        <ul class="nav nav-pills pull-right"><br><br>
+          <li ><a href="#">  <img src="images/about.png"></a>
+
+          <li ><a href="courses.html"> <img src="images/courses.png"></a></li>
+          <li><a href="signin.html"><img src="images/sign.png"></a></li>
+        </ul>
+       <img src="images/logo.png">
+      <br>
+<br><br>
+   
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/he.png"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="btn btn-lg btn-danger" href="signin.html" role="button">Sign up today</a></p>
+       
+
+          <br>
+         </div>
+ 
+<div class="column">
+  <center>
+  <div class="col-sm-6 col-md-4"><a href="subj.html" >
+   
+      <img src="images/c1.png"></a><br><br>
+      <img src="images/cc1.png"></a><br>
+        <img src="images/t1.png">Pv Aquino <p><br><img src="images/en1.png">&nbsp;678 <img src="images/str.png">1 &nbsp;<img src="images/dl.png">Free
+ 
+</div>
+
+  <div class="col-sm-2 col-md-4"><a href="subj.html" >
+      <img src="images/c2.png"></a><br><br>
+
+   <img src="images/cc2.png"></a><br>
+        <img src="images/t2.png">Chot Reyes <p><br><img src="images/en1.png">&nbsp;1064 <img src="images/str.png">5 &nbsp;<img src="images/dl.png">Free
+
+      </div>
+<div class="col-sm-6 col-md-4"><a href="subj.html" >
+   <img src="images/c3.png"></a><br><br>
+    
+          <img src="images/cc3.png"></a><br>
+        <img src="images/t3.png">Eric Domagas <p><br><img src="images/en1.png">&nbsp;5252 <img src="images/str.png">3 &nbsp;<img src="images/dl.png">Free
+       
+        <Br><Br><Br>
+      </div>
+   
+ 
+  <div class="col-sm-6 col-md-4"><a href="subj.html" >
+   
+      <img src="images/c4.png"></a><br><br>
+     <img src="images/cc4.png"></a><br>
+        <img src="images/t4.png">Earl Valencia <p><br><img src="images/en1.png">&nbsp;8657 <img src="images/str.png">3 &nbsp;<img src="images/dl.png">Free
+ 
+ 
+</div>
+
+  <div class="col-sm-2 col-md-4"><a href="subj.html" >
+      <img src="images/c6.png"></a><br><br>
+    
+      <img src="images/cc5.png"></a><br>
+        <img src="images/t5.png">Alvin Gendrano <p><br><img src="images/en1.png">&nbsp;8252 <img src="images/str.png">5 &nbsp;<img src="images/dl.png">Free
+      </div>
+   
+<div class="col-sm-6 col-md-4">
+  <a href="subj.html" >
+   <img src="images/c5.png"></a><br><br>
+    
+        <img src="images/cc6.png"></a><br>
+         <img src="images/t6.png">Rina Neoh <p><br><img src="images/en1.png">&nbsp;6432 <img src="images/str.png">2 &nbsp;<img src="images/dl.png">Free
+     <bR><bR><bR>
+      </div>
+    
+
+<center><a href="subj.html" class="btn btn-danger btn-lg">Browse more Topics</a>
+</center>
+</br></br>
+</div>
+</div>
+<center>
+  <div class="red">
+<div id="intro">
+    <div class="story">
+       </br></br></br></br></br></br></br></br></br></br>
+     <img src="images/q1.png"></a><br>
+          </div>
+      </div> 
+  </div> 
+      </div> 
+  </div> <br><br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/3rd.png"></a>
+  <br><br><br><br>
+<div class="title1">
+ 
+
+  <div id="second">
+    <div class="story"><div class=""></div>
+        <div class="float-left">
+             <img src="images/dd.png">
+            
+          </div></div>
+      </div></div> <!--.story-->
+<div id="third">
+    <div class="story"><div class=""></div>
+        <div class="float-left">
+
+             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="images/focus.png">
+ </div>
+ </div> </div></div>
+
+    </div></div> <!--.story-->
+
+<div id="fifth">
+    <div class="story"><div class=""></div>
+        <div class="float-left">
+          
+             <img src="images/data.png">
+ </div>
+ </div> </div>
+ <br>
+</div>
+<center>
+  
+
+
+
+ <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+
+ <img src="images/4th.png"></a>
+ <br><br><br>
+</div></div>
+   
+
+     <div id="footer">
+      <div class="container">
+</br></br></br>
+<center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="home.html" title="Scroll Top">
+             <img src="images/h1.png">
+<a href="home.html" title="Scroll Top">
+             <img src="images/h2.png">
+<a href="home.html" title="Scroll Top">
+              <img src="images/h3.png">
+
+               <a href="home.html" title="Scroll Top">
+              <img src="images/h4.png">
+              </br></br>
+      <img src="images/cp.png"></a>
+      </div>
+    </div>
+
+    
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+  </body>
 </html>
