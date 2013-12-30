@@ -69,7 +69,19 @@ float: left;
 /* Customize container */
 @media (min-width: 768px) {
   .container {
+    max-width: 1200px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container2 {
     max-width: 850px;
+  }
+}
+@media (min-width: 768px) {
+  .container3 {
+    max-width: 850px;
+
   }
 }
 .container-narrow > hr {
