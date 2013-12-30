@@ -84,6 +84,14 @@ h2{
 #header, #intro, #second{
 	width: 100%;
 }
+
+#intro3{
+	background:url(images/wlp2.png) 50% 0 no-repeat fixed;
+	color: white;
+	height: 450px;
+	margin: 0 auto;
+	padding: 0;
+}
 #intro2{
 	background:url(images/wlp.jpg) 50% 0 no-repeat fixed;
 	color: white;
